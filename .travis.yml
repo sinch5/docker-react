@@ -1,0 +1,9 @@
+sudo: required
+services:
+    - docker
+    
+before_install:
+  - docker build -t sinch5/docker-react -f Docker.dev -f
+   
+script:
+  - docker run sinch5/docker-react npm runt test -- --coverage
