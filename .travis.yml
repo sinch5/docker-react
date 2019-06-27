@@ -5,5 +5,5 @@ services:
 before_install:
   - docker build -t sinch5/docker-react -f Dockerfile.dev .
    
-script:
-  - docker run sinch5/docker-react npm test -- --coverage
+#script:
+  #- docker run sinch5/docker-react npm test -- --coverage
